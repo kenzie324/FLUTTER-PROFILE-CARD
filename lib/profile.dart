@@ -36,8 +36,7 @@ class ProfileCard extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 20,
-                      vertical: 50,
+                      vertical: 10,
                       ),
                     child: Text('NAME',
                     style:  TextStyle(
@@ -48,8 +47,35 @@ class ProfileCard extends StatelessWidget {
                     ),
                   Text(
                     'Muhammad Kenzie Arzachel',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
-                  ),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24,
+                      ),
+                    ),
+                    Row(
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            children: <Widget>[
+                              Container(
+                                width: MediaQuery.of(context).size.width * 0.5,
+                                decoration: BoxDecoration(
+                                  color: Colors.redAccent,
+                                  borderRadius: BorderRadius.circular(
+                                    15,
+                                    ),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text('Address'),
+                                ),
+                                ),
+                            ],
+                          ),
+                        ),
+                        Column(),
+                    ],),
                 ],
               ),
             ),
