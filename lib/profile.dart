@@ -53,13 +53,21 @@ class ProfileCard extends StatelessWidget {
                       ),
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      /** 
+                       * start => full kiri
+                       * center => full tengah
+                       * end => full kanan
+                       * spacebetween => ke pojok dari bagian
+                       * spacearound => ke pojok dari bagian
+                       * spaceevenly => ke tengah hampir mirip spacearound
+                       */
                       children: <Widget>[
                         Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Column(
                             children: <Widget>[
                               Container(
-                                width: MediaQuery.of(context).size.width * 0.5,
                                 decoration: BoxDecoration(
                                   color: Colors.redAccent,
                                   borderRadius: BorderRadius.circular(
@@ -74,7 +82,25 @@ class ProfileCard extends StatelessWidget {
                             ],
                           ),
                         ),
-                        Column(),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            children: <Widget>[
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.redAccent,
+                                  borderRadius: BorderRadius.circular(
+                                    15,
+                                    ),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text('Tempat Tangggal Lahir'),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
                     ],),
                 ],
               ),
