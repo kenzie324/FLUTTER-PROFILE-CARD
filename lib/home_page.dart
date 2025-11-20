@@ -72,7 +72,7 @@ class _CalculateMortgagePageState extends State<CalculateMortgagePage> {
                 decoration: InputDecoration(
                   counterText: '',
                   labelText: 'Harga Awal',
-                  hintText: 'Masukkan Harga Awal',
+                  hintText: 'Masukkan Harga Awal', 
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),

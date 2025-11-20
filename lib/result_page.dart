@@ -28,7 +28,7 @@ class ResultPage extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center, 
             children: [
               Text(
                 formatter.format(monthlyPayment),
