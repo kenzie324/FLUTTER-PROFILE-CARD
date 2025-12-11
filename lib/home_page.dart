@@ -57,7 +57,7 @@ class _CalculateMortgagePageState extends State<CalculateMortgagePage> {
         centerTitle: true,
         backgroundColor: Colors.deepPurple.shade100,
       ),
-      body: SafeArea( // ✅ Tambahkan biar tidak kena area notch
+      body: SafeArea( 
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(16.0),
           child: Column(
@@ -122,7 +122,7 @@ class _CalculateMortgagePageState extends State<CalculateMortgagePage> {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 8),
-              Wrap( // ✅ Ganti Row jadi Wrap biar responsif
+              Wrap( 
                 alignment: WrapAlignment.center,
                 spacing: 10,
                 children: [10, 15, 20, 30].map((year) {
